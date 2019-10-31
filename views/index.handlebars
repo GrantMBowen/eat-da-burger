@@ -9,17 +9,17 @@
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
+      {{> burger_name/burger_name-block devoured=true}}
     {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Burges that have been Devoured!</h2>
+<h2>Burgers that have been Devoured!</h2>
 
 <ul>
-  {{#each burgerss}}
+  {{#each burgers}}
     {{#if devoured}}
-      {{> burger/burger-block devoured=false}}
+      {{> burger_name/burger_name-block devoured=false}}
     {{/if}}
   {{/each}}
 </ul>
